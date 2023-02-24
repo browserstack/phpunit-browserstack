@@ -1,5 +1,7 @@
 <?php
-require 'vendor/autoload.php';
+require_once('vendor/autoload.php');
+
+use Facebook\WebDriver\WebDriverBy;
 
 class SingleTest extends BrowserStackTest {
 
@@ -8,12 +10,7 @@ class SingleTest extends BrowserStackTest {
         $element = self::$driver->findElement(WebDriverBy::name("q"));
         $element->sendKeys("BrowserStack");
         $element->submit();
-        self::$driver->wait(10, 500)->until(function($driver) {
-          $elements = $driver->findElements(WebDriverBy::id("resultStats"));
-          return count($elements) > 0;
-        });
         $this->assertEquals('BrowserStack - Google Search', self::$driver->getTitle());
     }
-
 }
 ?>

@@ -3,3 +3,4 @@ composer.phar
 local.log
 vendor/
 bin/
+.DS_Store
