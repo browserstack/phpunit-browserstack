@@ -1,13 +1,12 @@
 {
   "require": {
     "browserstack/browserstack-local": "dev-master",
-    "phpunit/phpunit-selenium": "*",
-    "facebook/webdriver": "dev-master"
+    "phpunit/phpunit-selenium": "9.0.1",
+    "php-webdriver/webdriver": "1.14.0"
   },
   "scripts": {
-    "test": "composer single && composer local && composer parallel",
-    "single": "vendor/bin/phpunit tests/single_test.php",
-    "local": "CONFIG_FILE=config/local.conf.json vendor/bin/phpunit tests/local_test.php",
+    "single": "CONFIG_FILE=config/single.conf.json vendor/bin/phpunit tests/SingleTest.php",
+    "local": "CONFIG_FILE=config/local.conf.json vendor/bin/phpunit tests/LocalTest.php",
     "parallel": "CONFIG_FILE=config/parallel.conf.json /usr/bin/env php lib/parallel.php"
   },
   "autoload": {
