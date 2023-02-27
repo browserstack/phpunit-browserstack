@@ -16,5 +16,6 @@ class Test extends BrowserStackTest {
         // assert item in cart is same as one that was added
         $this->assertEquals($item_to_add, $item_in_cart);
     }
+
 }
 ?>
