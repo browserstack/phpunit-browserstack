@@ -7,7 +7,7 @@
 ## Setup
 * Clone the repo
 * Install dependencies `composer install`
-* Update `*.conf.json` files inside the `config/` directory with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
+* Update `test.conf.json` file inside the `config/` directory with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
 * To run tests, run `composer test`
