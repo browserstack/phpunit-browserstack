@@ -5,9 +5,8 @@
     "php-webdriver/webdriver": "1.14.0"
   },
   "scripts": {
-    "single": "CONFIG_FILE=config/single.conf.json vendor/bin/phpunit tests/SingleTest.php",
-    "local": "CONFIG_FILE=config/local.conf.json vendor/bin/phpunit tests/LocalTest.php",
-    "parallel": "CONFIG_FILE=config/parallel.conf.json /usr/bin/env php lib/parallel.php"
+    "local": "CONFIG_FILE=config/test.conf.json TEST_FILE=tests/LocalTest.php /usr/bin/env php lib/runner.php",
+    "test": "CONFIG_FILE=config/test.conf.json TEST_FILE=tests/Test.php /usr/bin/env php lib/runner.php"
   },
   "autoload": {
     "classmap": ["lib/"]

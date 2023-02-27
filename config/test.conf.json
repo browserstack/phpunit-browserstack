@@ -9,7 +9,8 @@
       "os": "OS X",
       "osVersion": "Monterey",
       "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit parallel chrome"
+      "sessionName": "BStack phpunit chrome",
+      "local": true
     }
   }, {
     "browserName": "edge",
@@ -18,7 +19,8 @@
       "os": "Windows",
       "osVersion": "11",
       "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit parallel edge"
+      "sessionName": "BStack phpunit edge",
+      "local": true
     }
   }, {
     "browserName": "chrome",
@@ -26,7 +28,8 @@
       "osVersion": "12.0",
       "deviceName": "Samsung Galaxy S22 Ultra",
       "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit parallel android"
+      "sessionName": "BStack phpunit android",
+      "local": true
     }
   }]
 }

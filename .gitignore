@@ -3,3 +3,4 @@ local.log
 vendor/
 bin/
 .DS_Store
+browserstack.err
