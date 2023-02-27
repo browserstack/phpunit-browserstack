@@ -4,14 +4,36 @@
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
+## Prerequisites
+
+1. Make sure that you have **PHP** installed on your system. You can download and install **PHP** using following commands in the terminal:
+
+  * **MacOS:**
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install php
+    ```
+  * **Windows:** 
+    ```bash
+    sudo apt-get install curl libcurl3 libcurl3-dev php
+    ```
+    **Note:** For **Windows**, you can download **PHP** from [here](http://windows.php.net/download/). Also, refer to this [documentation](http://php.net/manual/en/install.windows.php) for ensuring the accessibility of PHP through the Command Prompt.
+
+2. Download **composer** in the project directory ([Linux/MacOS](https://getcomposer.org/download/), [Windows](https://getcomposer.org/doc/00-intro.md#installation-windows)).
+
+    **Note:** To use the **composer** command directly, it either should have been downloaded in the project directory or should be accessible globally which can be done by the command below:
+    ```bash
+    mv composer.phar /usr/local/bin/composer
+    ```
+
 ## Setup
 * Clone the repo
-* Install dependencies `composer install`
+* Install dependencies using:  `composer install`
 * Update `test.conf.json` file inside the `config/` directory with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
-* To run tests, run `composer test`
-* To run local tests, run `composer local`
+* To run tests, run: `composer test`
+* To run local tests, run: `composer local`
 
  Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
 
