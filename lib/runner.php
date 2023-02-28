@@ -12,6 +12,7 @@ if (!$test_file) {
 }
 
 try {
+    // the following code starts local binary, comment out if local testing not needed
     $bs_local_args = array("key" => $GLOBALS['BROWSERSTACK_ACCESS_KEY']);
     $bs_local = new BrowserStack\Local();
     print("\nStarting Local Binary...\n");
