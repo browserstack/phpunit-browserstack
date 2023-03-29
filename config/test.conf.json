@@ -5,31 +5,28 @@
   "capabilities": [{
     "browserName": "chrome",
     "browserVersion": "latest",
-    "bstack:options": {
-      "os": "OS X",
-      "osVersion": "Monterey",
-      "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit chrome",
-      "local": true
-    }
+    "os": "OS X",
+    "os_version": "Monterey",
+    "build": "browserstack-build-1",
+    "name": "BStack phpunit chrome",
+    "browserstack.source": "phpunit:sample-selenium-3:v1.0",
+    "browserstack.local": true
   }, {
     "browserName": "edge",
     "browserVersion": "latest",
-    "bstack:options": {
-      "os": "Windows",
-      "osVersion": "11",
-      "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit edge",
-      "local": true
-    }
+    "os": "Windows",
+    "os_version": "11",
+    "build": "browserstack-build-1",
+    "name": "BStack phpunit edge",
+    "browserstack.source": "phpunit:sample-selenium-3:v1.0",
+    "browserstack.local": true
   }, {
     "browserName": "chrome",
-    "bstack:options": {
-      "osVersion": "12.0",
-      "deviceName": "Samsung Galaxy S22 Ultra",
-      "buildName": "browserstack-build-1",
-      "sessionName": "BStack phpunit android",
-      "local": true
-    }
+    "os_version": "12.0",
+    "deviceName": "Samsung Galaxy S22 Ultra",
+    "build": "browserstack-build-1",
+    "name": "BStack phpunit android",
+    "browserstack.source": "phpunit:sample-selenium-3:v1.0",
+    "browserstack.local": true
   }]
 }
