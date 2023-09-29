@@ -5,8 +5,8 @@
     "php-webdriver/webdriver": "1.14.0"
   },
   "scripts": {
-    "local": "php triggerTest.php tests LocalTest.php",
-    "test": "php triggerTest.php tests Test.php"
+    "local": "php triggerTest.php LocalTest.php",
+    "test": "php triggerTest.php Test.php"
   },
   "autoload": {
     "classmap": ["lib/"]
