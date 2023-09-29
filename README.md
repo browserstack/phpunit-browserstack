@@ -26,6 +26,8 @@
     mv composer.phar /usr/local/bin/composer
     ```
 
+3. If php usage is different, for example, if php.exe is used instead of php in certain windows, please change that accordingly to run the tests.
+
 ## Setup
 * Clone the repo
 * Install dependencies using:  `composer install`

@@ -13,7 +13,7 @@ class BrowserStackTest extends PHPUnit\Framework\TestCase {
         $task_id = getenv('TASK_ID') ? getenv('TASK_ID') : 0;
 
         $url = "https://{$GLOBALS['BROWSERSTACK_USERNAME']}:{$GLOBALS['BROWSERSTACK_ACCESS_KEY']}@hub.browserstack.com/wd/hub";
-        $caps = $CONFIG['capabilities'][$task_id];
+        $caps = $CONFIG['capabilities'][(int)$task_id];
 
         self::$driver = RemoteWebDriver::create($url, $caps);
     }
