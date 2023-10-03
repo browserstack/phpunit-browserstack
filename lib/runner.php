@@ -13,8 +13,8 @@ if (!$test_file) {
 
 try {
     // the following code starts local binary, comment out if local testing not needed
-    // Start local binary with additional args "logfile" => "logs.txt", "v" => true to get the local not started logs for debugging.
-    $bs_local_args = array("key" => $GLOBALS['BROWSERSTACK_ACCESS_KEY']);
+    // Local binary started with additional args "logfile" => "logs.txt", "v" => true to get the local not started logs for debugging. Please remove them if not needed and cleanup logs if becoming huge.
+    $bs_local_args = array("key" => $GLOBALS['BROWSERSTACK_ACCESS_KEY'], "logfile" => "logs.txt", "v" => true);
     $bs_local = new BrowserStack\Local();
     $currentOS = strtoupper(substr(PHP_OS, 0, 3));
     print("\nStarting Local Binary...\n");
